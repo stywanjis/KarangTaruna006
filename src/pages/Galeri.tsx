@@ -2,9 +2,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Camera, Image as ImageIcon, X, Calendar } from "lucide-react";
 import { useState } from "react";
 
+interface GalleryItem {
+  id: number;
+  category: string;
+  title: string;
+  description: string;
+  date: string;
+  images?: string[]; // opsional kalau nanti mau ada banyak foto
+}
+
 const Galeri = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedImage, setSelectedImage] = useState<any>(null);
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   const categories = [
     { id: "all", name: "Semua" },
