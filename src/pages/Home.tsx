@@ -131,7 +131,7 @@ const Home = () => {
           >
             <h2 className="font-lexend text-4xl md:text-5xl font-bold mb-4">
               <span className="text-elegant-gold">Profil Singkat</span>
-              <span className="text-foreground"> • Brief Profile</span>
+              {/* <span className="text-foreground"> • Brief Profile</span> */}
             </h2>
           </motion.div>
 
@@ -167,7 +167,7 @@ const Home = () => {
           >
             <h2 className="font-lexend text-4xl md:text-5xl font-bold mb-4">
               <span className="text-elegant-gold">Kepengurusan Inti</span>
-              <span className="text-foreground"> • Core Leadership</span>
+              {/* <span className="text-foreground"> • Core Leadership</span> */}
             </h2>
             <p className="font-poppins text-elegant-subtext text-lg max-w-2xl mx-auto">
               Pengurus inti yang memimpin organisasi kami
@@ -242,7 +242,7 @@ const Home = () => {
           >
             <h2 className="font-lexend text-4xl md:text-5xl font-bold mb-4">
               <span className="text-elegant-gold">Program Unggulan</span>
-              <span className="text-foreground"> • Featured Programs</span>
+              {/* <span className="text-foreground"> • Featured Programs</span> */}
             </h2>
             <p className="font-poppins text-elegant-subtext text-lg max-w-2xl mx-auto">
               Tiga program kerja utama kami untuk masyarakat

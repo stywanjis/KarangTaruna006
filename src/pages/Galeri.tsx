@@ -30,6 +30,11 @@ const Galeri = () => {
       title: "Donor Darah Rutin",
       description: "Kegiatan donor darah bersama PMI",
       date: "Oktober 2024",
+      images: [
+        "src/assets/hero-home.jpg",
+        "src/assets/back-home.png",
+        "src/assets/back-home.png",
+      ],
     },
     {
       id: 2,
@@ -37,6 +42,7 @@ const Galeri = () => {
       title: "Turnamen Futsal",
       description: "Turnamen futsal antar RW se-Kelurahan",
       date: "September 2024",
+      images: ["src/assets"],
     },
     {
       id: 3,
@@ -191,8 +197,18 @@ const Galeri = () => {
                 className="group relative bg-elegant-surface rounded-2xl overflow-hidden shadow-elegant hover:shadow-gold transition-all duration-300 border border-elegant-gold/20"
               >
                 {/* Image Placeholder */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-elegant-gold/20 to-elegant-surface flex items-center justify-center relative overflow-hidden">
-                  <ImageIcon className="h-20 w-20 text-elegant-gold/30" />
+                <div className="aspect-[4/3] bg-black relative overflow-hidden">
+                  {item.images && item.images.length > 0 ? (
+                    <img
+                      src={item.images[0]}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-elegant-surface">
+                      <ImageIcon className="h-20 w-20 text-elegant-gold/30" />
+                    </div>
+                  )}
 
                   {/* Overlay on Hover */}
                   <div className="absolute inset-0 bg-elegant-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -302,7 +318,7 @@ const Galeri = () => {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", duration: 0.6 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-5xl"
+              className="w-full max-w-3xl mx-auto rounded-2xl overflow-hidden bg-elegant-darker border border-elegant-gold/30 shadow-xl"
             >
               <div className="relative">
                 {/* Close Button */}
@@ -318,11 +334,29 @@ const Galeri = () => {
                 {/* Image Container */}
                 <div className="bg-elegant-darker border-2 border-elegant-gold rounded-2xl shadow-gold overflow-hidden">
                   {/* Large Image Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-elegant-gold/20 to-elegant-surface flex items-center justify-center relative">
+                  {/* <div className="aspect-video bg-gradient-to-br from-elegant-gold/20 to-elegant-surface flex items-center justify-center relative">
                     <ImageIcon className="h-32 w-32 text-elegant-gold/40" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <Camera className="h-20 w-20 text-elegant-gold/60" />
                     </div>
+                  </div> */}
+
+                  {/* Multiple Images Carousel */}
+                  <div className="w-full h-[400px] overflow-x-auto flex gap-4 p-4 bg-elegant-dark items-center justify-center">
+                    {selectedImage.images && selectedImage.images.length > 0 ? (
+                      selectedImage.images.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`Image ${i}`}
+                          className="h-full object-contain rounded-xl border border-elegant-gold flex-shrink-0"
+                        />
+                      ))
+                    ) : (
+                      <div className="aspect-video w-full bg-gradient-to-br from-elegant-gold/20 to-elegant-surface flex items-center justify-center">
+                        <ImageIcon className="h-32 w-32 text-elegant-gold/30" />
+                      </div>
+                    )}
                   </div>
 
                   {/* Info Section */}

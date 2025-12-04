@@ -16,7 +16,8 @@ const Jadwal = () => {
           location: "Balai RW 06",
           type: "meeting",
           pic: "Budi Santoso",
-          description: "Rapat koordinasi untuk membahas program kerja tahun 2025, evaluasi tahun sebelumnya, dan penetapan target organisasi. Harap semua pengurus hadir tepat waktu.",
+          description:
+            "Rapat koordinasi untuk membahas program kerja tahun 2025, evaluasi tahun sebelumnya, dan penetapan target organisasi. Harap semua pengurus hadir tepat waktu.",
         },
         {
           date: "12 Jan",
@@ -25,7 +26,8 @@ const Jadwal = () => {
           location: "Lapangan Manggarai",
           type: "sport",
           pic: "Siti Nurhaliza",
-          description: "Kegiatan senam pagi rutin untuk meningkatkan kesehatan dan kebersamaan warga. Terbuka untuk semua usia. Instruktur senam berpengalaman akan memandu.",
+          description:
+            "Kegiatan senam pagi rutin untuk meningkatkan kesehatan dan kebersamaan warga. Terbuka untuk semua usia. Instruktur senam berpengalaman akan memandu.",
         },
         {
           date: "20 Jan",
@@ -34,7 +36,8 @@ const Jadwal = () => {
           location: "Ruang Serbaguna",
           type: "training",
           pic: "Ahmad Ridwan",
-          description: "Pelatihan digital marketing gratis untuk pelaku UMKM dan pemuda yang ingin belajar pemasaran online. Materi mencakup social media marketing, content creation, dan strategi branding.",
+          description:
+            "Pelatihan digital marketing gratis untuk pelaku UMKM dan pemuda yang ingin belajar pemasaran online. Materi mencakup social media marketing, content creation, dan strategi branding.",
         },
       ],
     },
@@ -48,7 +51,8 @@ const Jadwal = () => {
           location: "Balai RW 06",
           type: "social",
           pic: "Dr. Fitria",
-          description: "Kegiatan donor darah bekerjasama dengan PMI Jakarta Selatan. Syarat donor: sehat, usia 17-60 tahun, berat badan minimal 45kg. Dapatkan sertifikat dan snack gratis.",
+          description:
+            "Kegiatan donor darah bekerjasama dengan PMI Jakarta Selatan. Syarat donor: sehat, usia 17-60 tahun, berat badan minimal 45kg. Dapatkan sertifikat dan snack gratis.",
         },
         {
           date: "14 Feb",
@@ -57,7 +61,8 @@ const Jadwal = () => {
           location: "Taman RW 06",
           type: "celebration",
           pic: "Dewi Lestari",
-          description: "Perayaan Valentine Day dengan berbagai games seru, doorprize menarik, dan penampilan musik akustik. Acara keluarga yang fun dan menghibur.",
+          description:
+            "Perayaan Valentine Day dengan berbagai games seru, doorprize menarik, dan penampilan musik akustik. Acara keluarga yang fun dan menghibur.",
         },
         {
           date: "25 Feb",
@@ -66,7 +71,8 @@ const Jadwal = () => {
           location: "Ruang Serbaguna",
           type: "training",
           pic: "Rudi Hartono",
-          description: "Workshop fotografi basic untuk pemula. Belajar teknik komposisi, lighting, dan editing foto. Peserta wajib membawa kamera/smartphone. Kuota terbatas 30 orang.",
+          description:
+            "Workshop fotografi basic untuk pemula. Belajar teknik komposisi, lighting, dan editing foto. Peserta wajib membawa kamera/smartphone. Kuota terbatas 30 orang.",
         },
       ],
     },
@@ -80,7 +86,8 @@ const Jadwal = () => {
           location: "Balai RW 06",
           type: "celebration",
           pic: "Ratna Sari",
-          description: "Acara peringatan Hari Perempuan Internasional dengan talkshow inspiratif, demo memasak, dan doorprize. Menghargai peran perempuan dalam membangun keluarga dan masyarakat.",
+          description:
+            "Acara peringatan Hari Perempuan Internasional dengan talkshow inspiratif, demo memasak, dan doorprize. Menghargai peran perempuan dalam membangun keluarga dan masyarakat.",
         },
         {
           date: "15 Mar",
@@ -89,7 +96,8 @@ const Jadwal = () => {
           location: "Lapangan Manggarai",
           type: "sport",
           pic: "Eko Prasetyo",
-          description: "Turnamen futsal antar RW se-Kelurahan Manggarai. Pendaftaran dibuka untuk tim putra usia 17-35 tahun. Hadiah total 5 juta rupiah untuk juara 1, 2, dan 3.",
+          description:
+            "Turnamen futsal antar RW se-Kelurahan Manggarai. Pendaftaran dibuka untuk tim putra usia 17-35 tahun. Hadiah total 5 juta rupiah untuk juara 1, 2, dan 3.",
         },
         {
           date: "22 Mar",
@@ -98,7 +106,8 @@ const Jadwal = () => {
           location: "Halaman Balai RW",
           type: "business",
           pic: "Joko Susilo",
-          description: "Bazar UMKM untuk memberdayakan usaha warga. Gratis untuk pedagang warga RW 06. Berbagai produk kuliner, fashion, dan kerajinan tersedia dengan harga terjangkau.",
+          description:
+            "Bazar UMKM untuk memberdayakan usaha warga. Gratis untuk pedagang warga RW 06. Berbagai produk kuliner, fashion, dan kerajinan tersedia dengan harga terjangkau.",
         },
       ],
     },
@@ -164,7 +173,8 @@ const Jadwal = () => {
               </span>
             </h1>
             <p className="font-poppins text-elegant-subtext text-lg max-w-3xl mx-auto">
-              Agenda dan jadwal kegiatan Karang Taruna RW 06 untuk periode mendatang
+              Agenda dan jadwal kegiatan Karang Taruna RW 06 untuk periode
+              mendatang
             </p>
           </motion.div>
         </div>
@@ -222,11 +232,15 @@ const Jadwal = () => {
                           <div className="flex flex-col sm:flex-row gap-4 text-elegant-subtext mb-4">
                             <div className="flex items-center gap-2">
                               <Clock className="h-4 w-4 text-elegant-gold" />
-                              <span className="font-poppins text-sm">{event.time}</span>
+                              <span className="font-poppins text-sm">
+                                {event.time}
+                              </span>
                             </div>
                             <div className="flex items-center gap-2">
                               <MapPin className="h-4 w-4 text-elegant-gold" />
-                              <span className="font-poppins text-sm">{event.location}</span>
+                              <span className="font-poppins text-sm">
+                                {event.location}
+                              </span>
                             </div>
                           </div>
                           <motion.button
@@ -249,7 +263,7 @@ const Jadwal = () => {
       </section>
 
       {/* Legend Section */}
-      <section className="py-16 bg-elegant-darker">
+      {/* <section className="py-16 bg-elegant-darker">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -293,7 +307,7 @@ const Jadwal = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Modal Detail */}
       <AnimatePresence>
@@ -339,7 +353,9 @@ const Jadwal = () => {
                   </div>
                   <div className="flex items-center gap-3 text-foreground">
                     <MapPin className="h-5 w-5 text-elegant-gold" />
-                    <span className="font-poppins">{selectedEvent.location}</span>
+                    <span className="font-poppins">
+                      {selectedEvent.location}
+                    </span>
                   </div>
                   <div className="flex items-center gap-3 text-foreground">
                     <User className="h-5 w-5 text-elegant-gold" />

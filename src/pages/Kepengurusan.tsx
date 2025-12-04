@@ -79,9 +79,9 @@ const Kepengurusan = () => {
             <h1 className="font-lexend text-5xl md:text-6xl font-bold mb-6">
               <span className="text-elegant-gold">Struktur Kepengurusan</span>
               <br />
-              <span className="text-foreground text-3xl md:text-4xl mt-4 block">
+              {/* <span className="text-foreground text-3xl md:text-4xl mt-4 block">
                 Organization Structure
-              </span>
+              </span> */}
             </h1>
             <p className="font-poppins text-elegant-subtext text-lg max-w-3xl mx-auto">
               Mengenal pengurus Karang Taruna RW 06 Periode 2024-2026
@@ -103,9 +103,9 @@ const Kepengurusan = () => {
             <h2 className="font-lexend text-4xl font-bold mb-4">
               <span className="text-elegant-gold">Pimpinan Inti</span>
               <br />
-              <span className="text-foreground text-2xl mt-2 block">
+              {/* <span className="text-foreground text-2xl mt-2 block">
                 Core Leadership
-              </span>
+              </span> */}
             </h2>
           </motion.div>
 
@@ -153,9 +153,9 @@ const Kepengurusan = () => {
             <h2 className="font-lexend text-4xl font-bold mb-4">
               <span className="text-elegant-gold">Bidang-Bidang</span>
               <br />
-              <span className="text-foreground text-2xl mt-2 block">
+              {/* <span className="text-foreground text-2xl mt-2 block">
                 Divisions
-              </span>
+              </span> */}
             </h2>
           </motion.div>
 

@@ -6,19 +6,30 @@ const Profil = () => {
     {
       icon: Eye,
       title: "Visi • Vision",
-      content: "Menjadi organisasi pemuda yang solid, kreatif, dan berdaya saing dalam membangun generasi muda yang berkarakter dan berprestasi di wilayah Manggarai.",
+      content:
+        "Menjadi organisasi pemuda yang solid, kreatif, dan berdaya saing dalam membangun generasi muda yang berkarakter dan berprestasi di wilayah Manggarai.",
     },
     {
       icon: Target,
       title: "Misi • Mission",
-      content: "Memberdayakan potensi pemuda melalui program-program yang inovatif, edukatif, dan berkelanjutan untuk kemajuan bersama.",
+      content:
+        "Memberdayakan potensi pemuda melalui program-program yang inovatif, edukatif, dan berkelanjutan untuk kemajuan bersama.",
     },
   ];
 
   const values = [
-    { title: "Integritas", description: "Menjunjung tinggi kejujuran dan transparansi" },
-    { title: "Solidaritas", description: "Membangun kebersamaan dan gotong royong" },
-    { title: "Kreativitas", description: "Mendorong inovasi dan ide-ide segar" },
+    {
+      title: "Integritas",
+      description: "Menjunjung tinggi kejujuran dan transparansi",
+    },
+    {
+      title: "Solidaritas",
+      description: "Membangun kebersamaan dan gotong royong",
+    },
+    {
+      title: "Kreativitas",
+      description: "Mendorong inovasi dan ide-ide segar",
+    },
     { title: "Profesional", description: "Bekerja dengan standar yang tinggi" },
   ];
 
@@ -58,12 +69,13 @@ const Profil = () => {
             <h1 className="font-lexend text-5xl md:text-6xl font-bold mb-6">
               <span className="text-elegant-gold">Profil Organisasi</span>
               <br />
-              <span className="text-foreground text-3xl md:text-4xl mt-4 block">
+              {/* <span className="text-foreground text-3xl md:text-4xl mt-4 block">
                 Organization Profile
-              </span>
+              </span> */}
             </h1>
             <p className="font-poppins text-elegant-subtext text-lg max-w-3xl mx-auto">
-              Mengenal lebih dekat organisasi pemuda yang berkomitmen membangun masa depan cerah
+              Mengenal lebih dekat organisasi pemuda yang berkomitmen membangun
+              masa depan cerah
             </p>
           </motion.div>
         </div>
@@ -86,13 +98,22 @@ const Profil = () => {
               </h2>
               <div className="space-y-4 font-poppins text-elegant-subtext leading-relaxed">
                 <p>
-                  Karang Taruna RW 06 Manggarai adalah organisasi kepemudaan yang berdiri sejak lebih dari satu dekade yang lalu. Kami adalah wadah bagi para pemuda untuk berkembang, berkarya, dan berkontribusi positif bagi lingkungan sekitar.
+                  Karang Taruna RW 06 Manggarai adalah organisasi kepemudaan
+                  yang berdiri sejak lebih dari satu dekade yang lalu. Kami
+                  adalah wadah bagi para pemuda untuk berkembang, berkarya, dan
+                  berkontribusi positif bagi lingkungan sekitar.
                 </p>
                 <p>
-                  Dengan semangat kebersamaan dan gotong royong, kami terus berkomitmen untuk menjalankan berbagai program yang bermanfaat, mulai dari kegiatan sosial, olahraga, hingga pengembangan keterampilan.
+                  Dengan semangat kebersamaan dan gotong royong, kami terus
+                  berkomitmen untuk menjalankan berbagai program yang
+                  bermanfaat, mulai dari kegiatan sosial, olahraga, hingga
+                  pengembangan keterampilan.
                 </p>
                 <p>
-                  Kami percaya bahwa pemuda adalah agent of change yang mampu membawa perubahan positif. Melalui berbagai kegiatan dan program, kami berupaya membentuk karakter pemuda yang tangguh, kreatif, dan peduli terhadap sesama.
+                  Kami percaya bahwa pemuda adalah agent of change yang mampu
+                  membawa perubahan positif. Melalui berbagai kegiatan dan
+                  program, kami berupaya membentuk karakter pemuda yang tangguh,
+                  kreatif, dan peduli terhadap sesama.
                 </p>
               </div>
             </motion.div>
@@ -116,7 +137,9 @@ const Profil = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="h-2 w-2 rounded-full bg-elegant-gold mt-2 flex-shrink-0" />
-                    <span>Menciptakan lingkungan yang kondusif untuk berkarya</span>
+                    <span>
+                      Menciptakan lingkungan yang kondusif untuk berkarya
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="h-2 w-2 rounded-full bg-elegant-gold mt-2 flex-shrink-0" />
@@ -177,7 +200,9 @@ const Profil = () => {
             <h2 className="font-lexend text-4xl md:text-5xl font-bold mb-4">
               <span className="text-elegant-gold">Nilai-Nilai Kami</span>
               <br />
-              <span className="text-foreground text-2xl mt-2 block">Our Values</span>
+              <span className="text-foreground text-2xl mt-2 block">
+                Our Values
+              </span>
             </h2>
             <p className="font-poppins text-elegant-subtext text-lg max-w-2xl mx-auto">
               Prinsip yang menjadi landasan setiap langkah kami

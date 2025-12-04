@@ -15,6 +15,7 @@ const Pengumuman = () => {
       fullContent:
         "Karang Taruna RW 06 Manggarai dengan bangga mengumumkan pembukaan pendaftaran anggota baru untuk periode 2025. Program ini terbuka bagi seluruh pemuda berusia 17-35 tahun yang berdomisili di wilayah RW 06 Manggarai, Kelurahan Manggarai, Tebet, Jakarta Selatan.\n\nSebagai anggota, Anda akan mendapatkan berbagai manfaat termasuk akses ke program pelatihan, kegiatan sosial, networking dengan pemuda lainnya, dan kesempatan berkontribusi untuk kemajuan lingkungan.\n\nPendaftaran dapat dilakukan melalui:\n1. Datang langsung ke Sekretariat Karang Taruna (Balai RW 06)\n2. Menghubungi kontak pengurus di halaman Kontak\n3. Mengisi formulir online yang tersedia\n\nPersyaratan:\n- KTP domisili RW 06 Manggarai\n- Foto 3x4 (2 lembar)\n- Fotokopi KTP\n- Mengisi formulir pendaftaran\n\nBatas pendaftaran: 31 Januari 2025. Mari bergabung dan berkontribusi untuk kemajuan bersama!",
       category: "important",
+      // important = penting
       attachment: null,
     },
     {
@@ -29,7 +30,7 @@ const Pengumuman = () => {
       attachment: "Agenda Rapat 2025.pdf",
     },
     {
-      isPinned: false,
+      isPinned: true,
       date: "8 Januari 2025",
       title: "Pelatihan Digital Marketing Gratis",
       content:
@@ -147,7 +148,8 @@ const Pengumuman = () => {
               </span>
             </h1>
             <p className="font-poppins text-elegant-subtext text-lg max-w-3xl mx-auto">
-              Stay Updated • Informasi terkini seputar kegiatan Karang Taruna RW 06
+              Stay Updated • Informasi terkini seputar kegiatan Karang Taruna RW
+              06
             </p>
           </motion.div>
         </div>
@@ -174,11 +176,17 @@ const Pengumuman = () => {
                   <div className="absolute top-4 right-4">
                     <motion.div
                       animate={{ rotate: [0, -10, 10, -10, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatDelay: 3,
+                      }}
                       className="flex items-center gap-2 bg-elegant-gold text-elegant-dark px-3 py-1 rounded-full"
                     >
                       <Pin className="h-4 w-4" />
-                      <span className="font-poppins text-xs font-semibold">Disematkan</span>
+                      <span className="font-poppins text-xs font-semibold">
+                        Disematkan
+                      </span>
                     </motion.div>
                   </div>
                 )}
@@ -201,7 +209,9 @@ const Pengumuman = () => {
                 {/* Date */}
                 <div className="flex items-center gap-2 mb-4 text-elegant-subtext">
                   <Calendar className="h-4 w-4" />
-                  <span className="font-poppins text-sm">{announcement.date}</span>
+                  <span className="font-poppins text-sm">
+                    {announcement.date}
+                  </span>
                 </div>
 
                 {/* Title */}
