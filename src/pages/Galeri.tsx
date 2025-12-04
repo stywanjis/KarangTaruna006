@@ -33,7 +33,7 @@ const Galeri = () => {
       images: [
         "src/assets/hero-home.jpg",
         "src/assets/back-home.png",
-        "src/assets/back-home.png",
+        "src/assets/logo.png",
       ],
     },
     {
