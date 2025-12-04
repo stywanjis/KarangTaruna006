@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoImg from "@/assets/logoo.png";
+import logoImg from "@/assets/logo katar.png";
 import ThemeToggle from "@/components/theme-toggle";
 
 const navItems = [
