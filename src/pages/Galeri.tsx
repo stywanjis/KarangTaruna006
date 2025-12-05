@@ -46,6 +46,7 @@ const Galeri = () => {
       title: "Workshop Digital Marketing",
       description: "Pelatihan digital marketing untuk UMKM",
       date: "Agustus 2024",
+      images: ["src/assets/logo.png"],
     },
     {
       id: 4,
