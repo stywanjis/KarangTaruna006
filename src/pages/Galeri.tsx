@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Camera, Image as ImageIcon, X, Calendar } from "lucide-react";
 import { useState } from "react";
+import gambar from "@/assets/logoo.png";
 
 interface GalleryItem {
   id: number;
@@ -46,7 +47,7 @@ const Galeri = () => {
       title: "Workshop Digital Marketing",
       description: "Pelatihan digital marketing untuk UMKM",
       date: "Agustus 2024",
-      images: ["src/assets/logo.png"],
+      images: [gambar],
     },
     {
       id: 4,
