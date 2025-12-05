@@ -30,7 +30,7 @@ const Galeri = () => {
       title: "Donor Darah Rutin",
       description: "Kegiatan donor darah bersama PMI",
       date: "Oktober 2024",
-      images: ["src/assets/hero-home.jpg", "src/assets/back-home.png"],
+      images: ["@/src/assets/hero-home.jpg", "@/src/assets/back-home.png"],
     },
     {
       id: 2,
