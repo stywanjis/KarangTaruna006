@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
+  Youtube,
   Facebook,
   Instagram,
   Twitter,
@@ -28,7 +29,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Youtube, href: "#", label: "Facebook" },
     {
       icon: Instagram,
       href: "https://www.instagram.com/tarunaunit06/",
