@@ -8,7 +8,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import logoImg from "@/assets/logo katar.png";
+import logoImg from "@/assets/logo_katar no back.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
